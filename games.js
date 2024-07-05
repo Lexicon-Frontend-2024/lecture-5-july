@@ -7,7 +7,7 @@
 //     let nmbrOfThrows = 0;
 
 //     while(goal < 7) {
-//         let dice = Math.floor(Math.random() * 6 + 1);
+//         let dice = randomizeNumber(1, 6);
 //         nmbrOfThrows++;
 //         console.log(dice);
 //         if(dice === goal) {
@@ -25,8 +25,8 @@
 // let sum = 0;
 
 // while(sum < goal) {
-//     let dice1 = Math.floor(Math.random() * 6 + 1);
-//     let dice2 = Math.floor(Math.random() * 6 + 1);
+//     let dice1 = randomizeNumber(1, 6);
+//     let dice2 = randomizeNumber(1, 6);
 //     let result = dice1 + dice2;
 
 //     if(result === knockoutNmbr) {
@@ -133,7 +133,7 @@
 // }
 
 // Högt eller lågt - Computational Thinking Games
-// let secretNmbr = Math.floor(Math.random() * 100 + 1);
+// let secretNmbr = randomizeNumber(1, 100);
 // let guess;
 // let guesses = 0;
 
@@ -151,20 +151,24 @@
 
 
 // Söka efter likheter mellan ord - Computational Thinking Games
-let word1 = prompt('Ange ett ord');
-let word2 = prompt('Ange ett ord till');
-let similarities = 0;
+// let word1 = prompt('Ange ett ord');
+// let word2 = prompt('Ange ett ord till');
+// let similarities = 0;
 
-if(word1.length > word2.length) {
-    let temp = word1;
-    word1 = word2;
-    word2 = temp;
-}
+// if(word1.length > word2.length) {
+//     let temp = word1;
+//     word1 = word2;
+//     word2 = temp;
+// }
 
-for(let i = 0; i < word1.length; i++) {
-    if(word1[i] === word2[i]) {
-        similarities++;
-    }
-}
+// for(let i = 0; i < word1.length; i++) {
+//     if(word1[i] === word2[i]) {
+//         similarities++;
+//     }
+// }
 
-console.log(`${word1} och ${word2} har ${similarities} likheter`);
+// console.log(`${word1} och ${word2} har ${similarities} likheter`);
+
+// function randomizeNumber(min, max) {
+//     return Math.floor(Math.random() * max + min);
+// }
